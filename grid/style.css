@@ -1,0 +1,52 @@
+main {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 200px;
+  display: grid;
+  grid-template-areas: 
+    "a a a o o"
+    "p p p o o"
+    "e . t t t"
+  ;
+}
+
+@media (max-width: 600px) {
+  main {
+    grid-template-areas: 
+    "o"
+    "a"
+    "p"
+    "e"
+    "t"
+  ;
+  }
+}
+
+section {
+  min-height: 120px;
+}
+
+#apple {
+  grid-area: a;
+  background-color: lightgreen;
+}
+
+#orange {
+  grid-area: o;
+  background-color: orange;
+}
+
+#pineapple {
+  grid-area: p;
+  background-color: gold;
+}
+
+#pear {
+  grid-area: e;
+  background-color: burlywood;
+}
+
+#tomato {
+  grid-area: t;
+  background-color: red;
+}
